@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231128 00:25:22.654" rpa="false" schemaversion="4">
+<suite id="s1" name="myTest" source="D:\pythonProject\October2023\myTest.robot">
+<test id="s1-t1" name="Launch the browser" line="5">
+<kw name="Launch Browser" library="function">
+<arg>chrome</arg>
+<arg>https://google.co.in</arg>
+<status status="PASS" starttime="20231128 00:25:22.772" endtime="20231128 00:25:27.764"/>
+</kw>
+<kw name="Click" library="function">
+<arg>//*[@id="gb"]/div/div[1]/div/div[1]/a</arg>
+<msg timestamp="20231128 00:25:27.764" level="FAIL">TypeError: Browser.__init__() missing 2 required positional arguments: 'browser_name' and 'url'</msg>
+<status status="FAIL" starttime="20231128 00:25:27.764" endtime="20231128 00:25:27.765"/>
+</kw>
+<status status="FAIL" starttime="20231128 00:25:22.772" endtime="20231128 00:25:27.765">TypeError: Browser.__init__() missing 2 required positional arguments: 'browser_name' and 'url'</status>
+</test>
+<status status="FAIL" starttime="20231128 00:25:22.655" endtime="20231128 00:25:27.765"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="myTest">myTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
