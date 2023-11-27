@@ -1,6 +1,7 @@
 from selenium import webdriver
 import time
 
+
 class Browser:
     def __init__(self, browser_name, url):
         self.resolution = (1920, 1080)
@@ -12,6 +13,8 @@ class Browser:
 
         elif browser_name.lower() == "edge":
             self.driver = webdriver.Edge()
+            self.driver.maximize_window()
+            self.driver.set_window_rect(width=self.resolution[0], height=self.resolution[1])
             self.driver.get(url)
 
         else:
