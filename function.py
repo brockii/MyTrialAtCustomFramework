@@ -5,7 +5,6 @@ browser_instance = None
 
 def launch_browser(browser_name="chrome", location_of_launch="https://google.co.in"):
     global browser_instance
-
     browser_instance = main.Browser(browser_name, location_of_launch)
 
 def Wait(amount_of_time):
